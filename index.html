@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatList</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo-img" src="img/cat-fill.svg" alt="Бабуленькины котики" />
+        <span class="logo-text">Бабуленькины котики</span>
+    </header>
+    <div class="actions">
+        <div class="action_show">
+            <input id="inputShowById" type="text" />
+            <button id="buttonShowById">Show cat by this id</button>
+            <button id="buttonShowAll">Show all cats</button>
+        </div>
+        <form id="addCat">
+            <input type="number" placeholder="id" name="id" class="inp" />
+            <input type="text" placeholder="name" name="name" class="inp" />
+            <label><input type="checkbox" name="favourite" value="true" class="inp" />
+          favourite</label
+        >
+        <input
+          type="number"
+          placeholder="rate"
+          name="rate"
+          min="0"
+          max="10"
+          class="inp"
+        />
+        <input type="number" placeholder="age" name="age" class="inp" />
+        <input type="url" placeholder="img_link" name="img_link" class="inp" />
+        <input placeholder="description" name="description" class="inp" />
+        <button type="submit" id="addCatButton">Добавить котика</button>
+      </form>
+    </div>
+    <div class="mainContainer"></div>
+    <table class="table"></table>
+    <footer class="container">©2022 All rights reserved</footer>
+    <script src="Api.js"></script>
+    <script src="index.js"></script> 
+    <script src="script.js"></script>
+  </body>
+</html>
